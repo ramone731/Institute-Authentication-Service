@@ -10,7 +10,7 @@ import static com.fasterxml.jackson.databind.cfg.CoercionInputShape.Array;
 @RestController
 @RequestMapping("/course")
 public class CourseController {
-    String baseUrl="http://localhost:9090/course";
+    String baseUrl="http://localhost:9090/course"; //Restful Service: url
     @Autowired
     RestTemplate restTemplate;
     @GetMapping("/retrieveData")
