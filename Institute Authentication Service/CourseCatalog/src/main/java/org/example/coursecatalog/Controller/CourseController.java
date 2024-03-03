@@ -15,7 +15,7 @@ public class CourseController {
     RestTemplate restTemplate;
     @GetMapping("/retrieveData")
     public List<Course> getData(){
-        Course arr[] = restTemplate.getForObject(baseUrl + "/retrieveData", Course[].class);
+        Course arr[] = restTemplate.getForObject(baseUrl + "/retrieveData", Course[].class); //gather data from Restful servvice : RestTemplate
         return Array.asList(arr);
     }
 
